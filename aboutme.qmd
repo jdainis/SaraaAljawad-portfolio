@@ -2,6 +2,33 @@
 title: "About me"
 ---
 
-Add some text and a figure describing myself.
+## Background
 
-For details, see the instructions. 
+My name is **Saraa Aljawad**, and I am a PhD student in **Bioinformatics** at the University of Georgia. My academic background in medical imaging (MRI) and data analysis, with a strong interest in applying computational methods to biomedical data.
+
+My current research focuses on **NMR metabolomics**, where I study signal-to-noise ratio (SNR), solvent effects, and reproducibility in high-salinity biological samples such as urine. I am particularly interested in building reproducible analysis pipelines and using statistical and machine learning methods to better interpret complex experimental data.
+
+I have experience with:
+
+-MATLAB.
+
+-Python.
+
+Through this course, I hope to strengthen my skills in **applied data analysis**, improve my ability to design reproducible workflows, and gain more confidence in organizing and communicating complex analyses clearly.
+
+## What I Hope to Learn in MADA
+
+In **Modern Applied Data Analysis**, I am especially interested in learning how to:
+
+-   Apply statistical and modeling techniques to real-world datasets
+-   Build clean, reproducible analysis projects
+-   Improve code organization and documentation
+-   Effectively communicate results through reports and websites
+
+## A Creative Data Visualization Website
+
+A data visualization website I find interesting is *Information Is Beautiful*:
+
+https://informationisbeautiful.net
+
+This website presents data through visually striking graphics that combine design and analysis. I find it interesting because it shows how data analysis can be both informative and engaging.

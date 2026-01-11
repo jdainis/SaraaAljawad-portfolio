@@ -11,13 +11,34 @@
     "href": "aboutme.html",
     "title": "About me",
     "section": "",
-    "text": "Add some text and a figure describing myself.\nFor details, see the instructions."
+    "text": "My name is Saraa Aljawad, and I am a PhD student in Bioinformatics at the University of Georgia. My academic background in medical imaging (MRI) and data analysis, with a strong interest in applying computational methods to biomedical data.\nMy current research focuses on NMR metabolomics, where I study signal-to-noise ratio (SNR), solvent effects, and reproducibility in high-salinity biological samples such as urine. I am particularly interested in building reproducible analysis pipelines and using statistical and machine learning methods to better interpret complex experimental data.\nI have experience with:\n-MATLAB.\n-Python.\nThrough this course, I hope to strengthen my skills in applied data analysis, improve my ability to design reproducible workflows, and gain more confidence in organizing and communicating complex analyses clearly."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "My website and data analysis portfolio",
+    "title": "Saraa Al Jawad Data Analysis portfolio",
     "section": "",
-    "text": "Feel free to change the text below any way you want 😁!\n\nHello\n\nAnd hello again\nWelcome to my website and data analysis portfolio.\n\nPlease use the Menu Bar above to look around.\nHave fun!"
+    "text": "Hello\nWelcome to my personal website and data analysis portfolio for the Modern Applied Data Analysis (MADA) course.\nPlease use the navigation menu above to explore the site."
+  },
+  {
+    "objectID": "aboutme.html#background",
+    "href": "aboutme.html#background",
+    "title": "About me",
+    "section": "",
+    "text": "My name is Saraa Aljawad, and I am a PhD student in Bioinformatics at the University of Georgia. My academic background in medical imaging (MRI) and data analysis, with a strong interest in applying computational methods to biomedical data.\nMy current research focuses on NMR metabolomics, where I study signal-to-noise ratio (SNR), solvent effects, and reproducibility in high-salinity biological samples such as urine. I am particularly interested in building reproducible analysis pipelines and using statistical and machine learning methods to better interpret complex experimental data.\nI have experience with:\n-MATLAB.\n-Python.\nThrough this course, I hope to strengthen my skills in applied data analysis, improve my ability to design reproducible workflows, and gain more confidence in organizing and communicating complex analyses clearly."
+  },
+  {
+    "objectID": "aboutme.html#what-i-hope-to-learn-in-mada",
+    "href": "aboutme.html#what-i-hope-to-learn-in-mada",
+    "title": "About me",
+    "section": "What I Hope to Learn in MADA",
+    "text": "What I Hope to Learn in MADA\nIn Modern Applied Data Analysis, I am especially interested in learning how to:\n\nApply statistical and modeling techniques to real-world datasets\nBuild clean, reproducible analysis projects\nImprove code organization and documentation\nEffectively communicate results through reports and websites"
+  },
+  {
+    "objectID": "aboutme.html#a-creative-data-visualization-website",
+    "href": "aboutme.html#a-creative-data-visualization-website",
+    "title": "About me",
+    "section": "A Creative Data Visualization Website",
+    "text": "A Creative Data Visualization Website\nA data visualization website I find interesting is Information Is Beautiful:\nhttps://informationisbeautiful.net\nThis website presents data through visually striking graphics that combine design and analysis. I find it interesting because it shows how data analysis can be both informative and engaging."
   }
 ]

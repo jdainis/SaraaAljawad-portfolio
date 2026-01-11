@@ -1,16 +1,12 @@
 ---
-title: "My website and data analysis portfolio"
+title: "Saraa Al Jawad Data Analysis portfolio"
 ---
-
-**Feel free to change the text below any way you want 😁!**
 
 # Hello
 
-### And hello again
 
-Welcome to **my website** and _data analysis portfolio._ 
+Welcome to my personal website and data analysis portfolio for the **Modern Applied Data Analysis (MADA)** course.
 
 
-* Please use the `Menu Bar` above to look around.
-* Have fun!
+Please use the **navigation menu above** to explore the site.
 
