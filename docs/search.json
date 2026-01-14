@@ -24,8 +24,8 @@
     "objectID": "aboutme.html#background",
     "href": "aboutme.html#background",
     "title": "About me",
-    "section": "",
-    "text": "My name is Saraa Aljawad, and I am a PhD student in Bioinformatics at the University of Georgia. My academic background in medical imaging (MRI) and data analysis, with a strong interest in applying computational methods to biomedical data.\nMy current research focuses on NMR metabolomics, where I study signal-to-noise ratio (SNR), solvent effects, and reproducibility in high-salinity biological samples such as urine. I am particularly interested in building reproducible analysis pipelines and using statistical and machine learning methods to better interpret complex experimental data.\nI have experience with:\n-MATLAB.\n-Python.\nThrough this course, I hope to strengthen my skills in applied data analysis, improve my ability to design reproducible workflows, and gain more confidence in organizing and communicating complex analyses clearly."
+    "section": "Background",
+    "text": "Background\nMy name is Saraa Aljawad, and I am a PhD student in Bioinformatics at the University of Georgia. My academic background in medical imaging (MRI) and data analysis, with a strong interest in applying computational methods to biomedical data.\nMy current research focuses on NMR metabolomics, where I study signal-to-noise ratio (SNR), solvent effects, and reproducibility in high-salinity biological samples such as urine. I am particularly interested in building reproducible analysis pipelines and using statistical and machine learning methods to better interpret complex experimental data.\nI have experience with:\n-MATLAB.\n-Python.\nThrough this course, I hope to strengthen my skills in applied data analysis, improve my ability to design reproducible workflows, and gain more confidence in organizing and communicating complex analyses clearly."
   },
   {
     "objectID": "aboutme.html#what-i-hope-to-learn-in-mada",
