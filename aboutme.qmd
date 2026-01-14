@@ -2,6 +2,9 @@
 title: "About me"
 ---
 
+![](Pprofile.jpg){width=200}
+
+
 ## Background
 
 My name is **Saraa Aljawad**, and I am a PhD student in **Bioinformatics** at the University of Georgia. My academic background in medical imaging (MRI) and data analysis, with a strong interest in applying computational methods to biomedical data.
