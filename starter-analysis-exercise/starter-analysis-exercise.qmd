@@ -1,5 +1,228 @@
 ---
-title: "Future Exercise"
+title: "R Coding Exercise"
+format: html
 ---
 
-Placeholder file for a future exercise.
+
+
+## Introduction
+
+In this exercise we will use the `gapminder` dataset from the `dslabs` package
+
+## Required Packages
+
+This exercise uses the following packages:
+
+\- **dslabs**: provides the `gapminder` dataset
+
+\- **dplyr**: data wrangling (filter/select)
+
+\- **ggplot2**: plotting
+
+\- **broom**: tidy outputs from linear models
+
+**Load all packages at the top of the analysis so they are available later.**
+
+**Each library () call attaches one package.**
+
+library(dslabs) \# provides the gapminder dataset
+
+library(dplyr) \# used for filtering/selecting columns
+
+library(ggplot2) \# used for plotting
+
+library(broom) \# used to tidy lm() results
+
+
+## Loading and Checking the data
+
+```{r}
+# load dslabs package
+library("dslabs")
+```
+
+```{r}
+
+# help(gapminder)  
+# get an overview of data structure
+str(gapminder)
+```
+
+
+```{r}
+# get a summary of data
+summary(gapminder)
+```
+
+
+```{r}
+# determine the type of object gapminder is
+class(gapminder)
+```
+
+## Processing data 
+
+
+```{r}
+# Create a new object that keeps ONLY rows where continent == "Africa"
+# (this subsets the original gapminder data frame)
+africadata <- gapminder[gapminder$continent == "Africa", ]
+
+# Check the structure of the new Africa-only dataset
+str(africadata)
+
+```
+
+
+```{r}
+# Get summary statistics for the Africa-only dataset
+summary(africadata)
+```
+
+```{r}
+library(dplyr)
+
+```
+
+
+```{r}
+# Infant mortality vs life expectancy
+
+africa_im_le <- africadata %>%
+select(infant_mortality, life_expectancy)
+
+str(africa_im_le)
+summary(africa_im_le)
+
+# Population vs life expectancy
+
+africa_pop_le <- africadata %>%
+select(population, life_expectancy)
+
+str(africa_pop_le)
+summary(africa_pop_le)
+
+```
+
+# Plotting 
+
+Making plots for each of the new subsets.
+
+
+```{r}
+# load ggplot2 here since we will make plots
+
+library(ggplot2)
+
+```
+
+
+```{r}
+# Plot life expectancy as a function of infant mortality
+
+ggplot(africa_im_le, aes(x = infant_mortality, y = life_expectancy)) +
+geom_point()
+
+```
+
+
+```{r}
+# Plot life expectancy as a function of population size (log scale)
+
+ggplot(africa_pop_le, aes(x = population, y = life_expectancy)) +
+geom_point() +
+scale_x_log10()
+
+```
+
+# More data processing 
+
+To understand which years have missing infant mortality data, we first check which years contain NA values for infant_mortality. Then we select a year with complete data.
+
+```{r}
+# Find rows with missing infant mortality
+
+africa_na <- africadata %>%
+filter(is.na(infant_mortality))
+
+# Check which years have missing values
+
+table(africa_na$year)
+
+```
+
+
+```{r}
+# Keep only data from the year 2000
+
+africa_2000 <- africadata %>%
+filter(year == 2000)
+
+# Check structure and summary
+
+str(africa_2000)
+summary(africa_2000)
+
+```
+
+# More Plotting
+
+We now repeat the same plots as before, but only using data from the year 2000.
+
+
+```{r}
+
+# Create 2000-only versions of the two 2-column datasets 
+
+africa2000_im_le <- africa_2000 %>%
+  select(infant_mortality, life_expectancy)
+
+
+str(africa2000_im_le)
+
+#summary of infant mortality and life expectancy data in 2000
+summary(africa2000_im_le)
+
+africa2000_pop_le <- africa_2000 %>%
+  select(population, life_expectancy)
+
+str(africa2000_pop_le)
+
+#summary of population and life expectancy data in 2000
+summary(africa2000_pop_le)
+
+ggplot(africa_2000, aes(x = infant_mortality, y = life_expectancy)) +
+geom_point()
+
+ggplot(africa_2000, aes(x = population, y = life_expectancy)) +
+geom_point() +
+scale_x_log10()
+
+```
+
+
+# A simple fit 
+
+We fit linear regression models using life expectancy as the response variable and infant mortality and population size as separate predictors, based on the Africa-only data from the year 2000.
+
+
+```{r}
+# Fit 1: linear model with life expectancy as outcome and infant mortality as predictor (year 2000 only)
+
+fit1 <- lm(life_expectancy ~ infant_mortality, data = africa_2000)
+
+# Show model results
+
+summary(fit1)
+
+
+
+# Fit 2: linear model with life expectancy as outcome and population as predictor (year 2000 only)
+
+fit2 <- lm(life_expectancy ~ population, data = africa_2000)
+
+# Show model results
+
+summary(fit2)
+
+```

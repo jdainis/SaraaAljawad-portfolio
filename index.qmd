@@ -4,9 +4,6 @@ title: "Saraa Al Jawad Data Analysis portfolio"
 
 # Hello
 
-
 Welcome to my personal website and data analysis portfolio for the **Modern Applied Data Analysis (MADA)** course.
 
-
 Please use the **navigation menu above** to explore the site.
-
