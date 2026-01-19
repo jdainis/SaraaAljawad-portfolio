@@ -1,5 +1,5 @@
 ---
-title: "R Coding Exercise"
+title: "Data Analysis intro"
 format: html
 ---
 
